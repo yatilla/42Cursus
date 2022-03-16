@@ -6,7 +6,7 @@
 /*   By: yatilla <yatilla@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 17:03:22 by yatilla           #+#    #+#             */
-/*   Updated: 2022/03/16 11:59:57 by yatilla          ###   ########.fr       */
+/*   Updated: 2022/03/16 12:02:24 by yatilla          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			returnval += format_specifier(arg, format[i]); 
+			returnval += format_specifier(arg, format[i]);
 		}
 		else
 			returnval += ft_putchar(format[i]);
